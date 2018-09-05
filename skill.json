@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "University Reformed Church sermon player",
+          "examplePhrases": [
+            "Alexa, open URC Sermon Player",
+            "Alexa, ask URC Sermon Player to begin",
+            "Alexa, ask URC Sermon Player to stop"
+          ],
+          "keywords": [
+            "podcast",
+            "streaming",
+            "Sermons"
+          ],
+          "name": "urc-sermon-player",
+          "description": "",
+          "smallIconUri": "https://alexademo.ninja/skills/logo-108.png",
+          "largeIconUri": "https://alexademo.ninja/skills/logo-512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Include your testing instruction (if any) here",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.6e76c6c1-ace8-4597-bedb-f111459a4df1",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-Multi_Stream_Audio_Player"
+              }
+            }
+          }
+        }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "b183f542610ff863c708f41dba33c93a"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "a6c483e1c20b8e559788a87ff0b2bd27"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:626292226917:function:ask-custom-Multi_Stream_Audio_Player",
+            "functionName": "arn:aws:lambda:us-east-1:626292226917:function:ask-custom-Multi_Stream_Audio_Player",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "b35f2ffa-8963-4e73-9f52-d49b04552cfb"
+          }
+        ]
+      }
+    },
+    "sebuk": {
+      "skill_id": "amzn1.ask.skill.29c4e817-300f-4823-a4e9-92296bc12356",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-Multi_Stream_Audio_Player-sebuk"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
