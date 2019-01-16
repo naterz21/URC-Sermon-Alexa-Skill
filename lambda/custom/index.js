@@ -20,7 +20,7 @@ const LaunchRequestHandler = {
 
     if (!playbackInfo.hasPreviousPlaybackSession) {
       message = 'Welcome to the University Reformed Church Sermon player. You can ask to play the audio to begin the latest Sermon.';
-      reprompt = 'You can say, play the audio, to begin.';
+      reprompt = 'You can say, play sermon, to begin.';
     } else {
       playbackInfo.inPlaybackSession = false;
       message = `You were listening to ${constants.audioData[playbackInfo.playOrder[playbackInfo.index]].title}. Would you like to resume?`;

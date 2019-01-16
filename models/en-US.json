@@ -1,79 +1,100 @@
 {
-    "interactionModel": {
-        "languageModel": {
+    "interactionModel":
+    {
+        "languageModel":
+        {
             "invocationName": "urc sermon player",
-            "intents": [{
-                    "name": "AMAZON.CancelIntent",
-                    "slots": [],
-                    "samples": []
-                },
+            "intents": [
+            {
+                "name": "AMAZON.CancelIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.HelpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StopIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "PlayAudioByDate",
+                "slots": [
                 {
-                    "name": "AMAZON.HelpIntent",
-                    "slots": [],
+                    "name": "dateOfSermon",
+                    "type": "AMAZON.DATE",
                     "samples": []
-                },
-                {
-                    "name": "AMAZON.StopIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "PlayAudio",
-                    "slots": [],
-                    "samples": [
-                        "begin sermon",
-                        "begin the sermon",
-                        "begin playing the sermon",
-                        "start sermon",
-                        "start the sermon",
-                        "start playing the sermon",
-                        "play the sermon",
-                        "to play",
-                        "to begin sermon",
-                        "to begin the sermon",
-                        "to begin playing the sermon",
-                        "to start sermon",
-                        "to start the sermon",
-                        "to start playing the sermon",
-                        "to play the sermon"
-                    ]
-                },
-                {
-                    "name": "AMAZON.PauseIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.ResumeIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.PreviousIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StartOverIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.YesIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.NoIntent",
-                    "slots": [],
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.NextIntent",
-                    "slots": [],
-                    "samples": []
-                }
-            ],
+                }, ],
+                "samples": [
+                    "begin sermon on {dateOfSermon}",
+                    "play sermon on {dateOfSermon}",
+                    "play on {dateOfSermon}",
+                    "{dateOfSermon} play sermon",
+                    "play {dateOfSermon} sermon",
+                    "play sermon from {dateOfSermon}",
+                    "begin sermon from {dateOfSermon}",
+                    "play sermon that was recorded on {dateOfSermon}",
+                ]
+            },
+            {
+                "name": "PlayAudio",
+                "slots": [],
+                "samples": [
+                    "begin sermon",
+                    "begin the sermon",
+                    "begin playing the sermon",
+                    "start sermon",
+                    "start the sermon",
+                    "start playing the sermon",
+                    "play the sermon",
+                    "to play",
+                    "to begin sermon",
+                    "to begin the sermon",
+                    "to begin playing the sermon",
+                    "to start sermon",
+                    "to start the sermon",
+                    "to start playing the sermon",
+                    "to play the sermon"
+                ]
+            },
+            {
+                "name": "AMAZON.PauseIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.ResumeIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.PreviousIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StartOverIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.YesIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.NoIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.NextIntent",
+                "slots": [],
+                "samples": []
+            }],
             "types": []
         }
     }
