@@ -27,7 +27,7 @@
                     "name": "dateOfSermon",
                     "type": "AMAZON.DATE",
                     "samples": []
-                }, ],
+                }],
                 "samples": [
                     "begin sermon on {dateOfSermon}",
                     "play sermon on {dateOfSermon}",
@@ -36,7 +36,7 @@
                     "play {dateOfSermon} sermon",
                     "play sermon from {dateOfSermon}",
                     "begin sermon from {dateOfSermon}",
-                    "play sermon that was recorded on {dateOfSermon}",
+                    "play sermon that was recorded on {dateOfSermon}"
                 ]
             },
             {
